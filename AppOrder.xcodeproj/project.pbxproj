@@ -73,15 +73,15 @@
 		236D041928A1B5EB00293FF2 /* AppOrder */ = {
 			isa = PBXGroup;
 			children = (
+				236D043D28A1B95C00293FF2 /* ContentHeaderView.swift */,
+				236D043F28A1B9CE00293FF2 /* PageTitleView.swift */,
+				236D041C28A1B5EB00293FF2 /* ContentView.swift */,
 				236D043828A1B8ED00293FF2 /* OrderView */,
 				236D043128A1B81000293FF2 /* HistoryView */,
 				236D042828A1B63200293FF2 /* MenuView */,
 				236D041A28A1B5EB00293FF2 /* AppOrderApp.swift */,
-				236D041C28A1B5EB00293FF2 /* ContentView.swift */,
 				236D041E28A1B5EC00293FF2 /* Assets.xcassets */,
 				236D042028A1B5EC00293FF2 /* Preview Content */,
-				236D043D28A1B95C00293FF2 /* ContentHeaderView.swift */,
-				236D043F28A1B9CE00293FF2 /* PageTitleView.swift */,
 			);
 			path = AppOrder;
 			sourceTree = "<group>";

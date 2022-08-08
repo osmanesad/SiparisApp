@@ -11,6 +11,8 @@ struct HistoryRowView: View {
     var body: some View {
         HStack(alignment: .top){
             Image("cake")
+                
+                
             Text("Cheesecake")
         }
     }

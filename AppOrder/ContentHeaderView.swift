@@ -13,8 +13,8 @@ struct ContentHeaderView: View {
             Image("logo")
                 .resizable()
                 .scaledToFit()
-            Text("Kitap&Kafe") // Mekan ismi.
-                .font(.title)
+            //Text("Kitap&Kafe") // Mekan ismi.
+                //.font(.title)
             
         }
         

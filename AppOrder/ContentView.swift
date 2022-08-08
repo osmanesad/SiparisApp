@@ -16,10 +16,10 @@ struct ContentView: View {
             PageTitleView(title:"Satın Al")
             MenuListView()
             OrderListView()
-            
+            Spacer()
         }
-        
-        Spacer()
+        .padding()
+      
     }
 }
 

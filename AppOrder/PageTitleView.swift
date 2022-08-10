@@ -11,12 +11,12 @@ struct PageTitleView: View {
     var title:String
     var body: some View {
         Text(title)
-        .font(.largeTitle)
+            .font(.headline)
     }
 }
 
 struct PageTitleView_Previews: PreviewProvider {
     static var previews: some View {
-        PageTitleView(title: "Satın Al")
+        PageTitleView(title: "Kitap, Kahve ve Atıştırmalık")
     }
 }

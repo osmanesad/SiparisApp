@@ -15,8 +15,8 @@ struct ContentView: View {
             
             
             ContentHeaderView()
-            PageTitleView(title:"Satın Al")
-                .foregroundColor(Color.green)
+            PageTitleView(title:"Kitap, Kahve, Dergi ve Atıştırmalık")
+                .foregroundColor(Color.black)
             MenuListView()
             OrderListView()
             Spacer()

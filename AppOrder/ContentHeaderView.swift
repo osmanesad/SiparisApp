@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentHeaderView: View {
     var body: some View {
-        ZStack{
+        HStack{
             Image("logo")
-                .resizable()
                 .scaledToFit()
+            /*
             Text("Kitap&Kafe") // Mekan ismi.
                 .font(.title)
                 //.foregroundColor(.white)
-            
+            */
         }
         
         // PageTitleView()

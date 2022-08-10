@@ -14,9 +14,10 @@ struct ContentHeaderView: View {
                 .scaledToFit()
             /*
             Text("Kitap&Kafe") // Mekan ismi.
-                .font(.title)
+                .font(Font.custom("Avinir-Black", size: 12))
+             */
                 //.foregroundColor(.white)
-            */
+            
         }
         
         // PageTitleView()
@@ -26,5 +27,6 @@ struct ContentHeaderView: View {
 struct ContentHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         ContentHeaderView()
+            .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
 }

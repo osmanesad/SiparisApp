@@ -11,8 +11,10 @@ struct OrderRowView: View {
     var body: some View {
         HStack(alignment: .firstTextBaseline){
             Text("Seçtiğiniz ürünler")
+                .font(.headline)
             Spacer()
             Text("0.00 TL")
+                .bold()
         }
     }
 }
@@ -20,5 +22,6 @@ struct OrderRowView: View {
 struct OrderRowView_Previews: PreviewProvider {
     static var previews: some View {
         OrderRowView()
+            .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
 }

@@ -15,11 +15,13 @@ struct MenuRowView: View {
             
             VStack{
                 Text("Kek Dilimi")
+                    .font(.headline)
+                    .fontWeight(.bold)
                 RatingsView()
                 
             }
             
-            Spacer()
+            //Spacer()
         }
     }
 }
@@ -27,5 +29,6 @@ struct MenuRowView: View {
 struct MenuRowView_Previews: PreviewProvider {
     static var previews: some View {
         MenuRowView()
+       
     }
 }

@@ -2,7 +2,7 @@
 //  ListHeaderView.swift
 //  AppOrder
 //
-//  Created by Osman Esad on 9.08.2022.
+//  Created by Osman Esad on 10.08.2022.
 //
 
 import SwiftUI
@@ -25,3 +25,4 @@ struct ListHeaderView_Previews: PreviewProvider {
         ListHeaderView(text: "Kategori")
     }
 }
+

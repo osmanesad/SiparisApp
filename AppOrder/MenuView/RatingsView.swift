@@ -10,7 +10,7 @@ import SwiftUI
 struct RatingsView: View {
     var body: some View {
         HStack{
-            ForEach(0..<4){item in
+            ForEach(0..<3){item in
                 Image("cake-slice")
             }
         }

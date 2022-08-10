@@ -15,6 +15,7 @@ struct ContentHeaderView: View {
                 .scaledToFit()
             Text("Kitap&Kafe") // Mekan ismi.
                 .font(.title)
+                //.foregroundColor(.white)
             
         }
         

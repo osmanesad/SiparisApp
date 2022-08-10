@@ -10,7 +10,7 @@ import SwiftUI
 struct MenuListView: View {
     var body: some View {
         VStack{
-            Text("Kategori")
+            ListHeaderView(text:"Menü")
             List(0..<5){ item in
                 
                 MenuRowView()

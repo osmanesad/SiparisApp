@@ -11,6 +11,8 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+
+            
             
             ContentHeaderView()
             PageTitleView(title:"Satın Al")

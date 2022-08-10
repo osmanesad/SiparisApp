@@ -16,12 +16,13 @@ struct ContentView: View {
             
             ContentHeaderView()
             PageTitleView(title:"Satın Al")
+                .foregroundColor(Color.green)
             MenuListView()
             OrderListView()
-            
+            Spacer()
         }
-        
-        Spacer()
+        .padding()
+      
     }
 }
 

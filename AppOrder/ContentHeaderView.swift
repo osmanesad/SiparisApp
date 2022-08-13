@@ -11,13 +11,14 @@ struct ContentHeaderView: View {
     var body: some View {
         HStack{
             Image("logo")
+            .resizable()
                 .scaledToFit()
             /*
             Text("Kitap&Kafe") // Mekan ismi.
                 .font(Font.custom("Avinir-Black", size: 12))
              */
                 //.foregroundColor(.white)
-            
+            .frame(minWidth: 300, idealWidth: 500, maxWidth: 600, minHeight: 75, idealHeight: 142, maxHeight: 150, alignment: .center) // Farklı ekran boyutları için logo görselinin sınırları belirtildi
         }
         
         // PageTitleView()

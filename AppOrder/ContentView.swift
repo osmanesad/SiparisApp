@@ -15,10 +15,13 @@ struct ContentView: View {
             
             
             ContentHeaderView()
+            .layoutPriority(2)
             PageTitleView(title:"Kitap, Kahve, Dergi ve Atıştırmalık")
                 .foregroundColor(Color.black)
             MenuListView()
+            .layoutPriority(1)
             OrderListView()
+            .layoutPriority(1)
             Spacer()
         }
         .padding()

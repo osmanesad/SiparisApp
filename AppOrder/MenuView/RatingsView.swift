@@ -11,7 +11,9 @@ struct RatingsView: View {
     var body: some View {
         HStack{
             ForEach(0..<3){item in
-                Image("cake-slice")
+                Image(systemName:"star.circle") // Apple yerel sembolü
+                .font(.headline)
+                .foregroundColor(Color("G4"))
             }
         }
     }

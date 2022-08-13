@@ -12,6 +12,8 @@ struct HistoryView: View {
         VStack{
             ContentHeaderView()
             PageTitleView(title:"Geçmiş")
+            SelectedImageView(image:"cake")
+            .padding(5)
             HistoryListView()
         }
 

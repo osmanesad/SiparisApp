@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isMenuDisplayed: Bool = true
     var body: some View {
         
         VStack {
@@ -16,12 +17,15 @@ struct ContentView: View {
             
             ContentHeaderView()
             .layoutPriority(2)
-            PageTitleView(title:"Kitap, Kahve, Dergi ve Atıştırmalık")
+            Button(action: {self.isMenuDisplayed.toggle()}) {
+                PageTitleView(title:"Kitap, Kahve, Dergi ve Atıştırmalık", isDisplayingOrders: ,isMenuDisplayed)
                 .foregroundColor(Color.black)
+            }
+            
             MenuListView()
-            .layoutPriority(1)
+            .layoutPriority(isMenuDisplayed ? 1.0 : 0.5)
             OrderListView()
-            .layoutPriority(1)
+            .layoutPriority(isMenuDisplayed ? 0.5 : 1.0)
             Spacer()
         }
         .padding()

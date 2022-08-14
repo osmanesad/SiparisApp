@@ -13,30 +13,30 @@ struct PageTitleView: View {
     var body: some View {
         HStack{
             Spacer()
-         Text(title)
-         
-            .font(.largeTitle)
+            Text(title)
             
-            .fontWeight(.light)
-            .padding(.trailing)
+                .font(.largeTitle)
+            
+                .fontWeight(.light)
+                .padding(.trailing)
             
         }
         .overlay(
             Image(systemName:isDisplayingOrders ?? false ? "chevron.up.square":"chevron.down.square")
-            .font(.title)
-            .foregroundColor(isDisplayingOrders != nil ? Color("G1"): .clear)
-            .padding(),
+                .font(.title)
+                .foregroundColor(isDisplayingOrders != nil ? Color.white: .clear)
+                .padding(),
             alignment: .leading
         )
-        .foregroundColor(Color("G1"))
-        .background(Color("G4"))
-
+        .foregroundColor(Color.white)
+        .background(Color.purple)
+        
         
     }
 }
 
 struct PageTitleView_Previews: PreviewProvider {
     static var previews: some View {
-        PageTitleView(title: "Kitap, Kahve ve Atıştırmalık")
+        PageTitleView(title: "Kahve ve Atıştırmalık")
     }
 }

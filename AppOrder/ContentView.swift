@@ -18,7 +18,7 @@ struct ContentView: View {
             ContentHeaderView()
             .layoutPriority(2)
             Button(action: {self.isMenuDisplayed.toggle()}) {
-                PageTitleView(title:"Kitap, Kahve, Dergi ve Atıştırmalık", isDisplayingOrders: ,isMenuDisplayed)
+                PageTitleView(title:"Kitap Kahve Atıştırmalık", isDisplayingOrders: isMenuDisplayed)
                 .foregroundColor(Color.black)
             }
             

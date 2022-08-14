@@ -12,12 +12,12 @@ struct PageTitleView: View {
     var isDisplayingOrders: Bool! = nil
     var body: some View {
         HStack{
-            .Spacer()
+            Spacer()
          Text(title)
          
             .font(.largeTitle)
             
-            .fontWeight(.heavy)
+            .fontWeight(.light)
             .padding(.trailing)
             
         }

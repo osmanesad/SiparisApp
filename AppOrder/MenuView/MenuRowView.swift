@@ -13,7 +13,7 @@ struct MenuRowView: View {
             
             Image("cake")
             
-            .border(Color("G4"), width:1) //Çerçeve
+            //.border(Color("G4"), width:4) //Çerçeve
             .cornerRadius(10) //Köşe yumuşatma
             .shadow(color: Color.black.opacity(0.5),radius:5, x:5, y:5) // Zemin gölgelendirme
             //.clipShape(Circle()) // Capsule, Rectangle vb.

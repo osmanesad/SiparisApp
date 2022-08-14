@@ -10,7 +10,7 @@ import SwiftUI
 struct RatingsView: View {
     var body: some View {
         HStack{
-            ForEach(0..<3){item in
+            ForEach(0..<5){item in
                 Image(systemName:"star.circle") // Apple yerel sembolü
                 .font(.headline)
                 .foregroundColor(Color("G4"))

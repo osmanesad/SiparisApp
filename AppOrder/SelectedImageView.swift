@@ -1,3 +1,10 @@
+//
+//  SelectedImageView.swift
+//  AppOrder
+//
+//  Created by Osman Esad on 14.08.2022.
+//
+
 import SwiftUI
 
 struct SelectedImageView: View {

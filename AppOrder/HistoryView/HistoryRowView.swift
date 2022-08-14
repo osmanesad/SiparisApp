@@ -21,8 +21,8 @@ struct HistoryRowView: View {
             
         }.overlay(
             Image(systemName: "chevron.right.square")
-            .padding
-            .font(.title)
+            .padding()
+                .font(.title)
             .foregroundColor(Color("G3"))
             ,alignment: .trailing
         )

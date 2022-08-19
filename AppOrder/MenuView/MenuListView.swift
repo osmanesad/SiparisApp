@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct MenuListView: View {
+    var menuList = MenuModel().menu
     var body: some View {
         VStack{
             ListHeaderView(text:"Menü")
-            List(0..<5){ item in
+            List(menuList){ item in
                 
                 MenuRowView()
-                
+                Text(item.name)
             }
             
         }

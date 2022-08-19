@@ -8,31 +8,36 @@
 import SwiftUI
 
 struct MenuRowView: View {
+    var menuItem: MenuItem = testMenuItem
     var body: some View {
-        HStack(alignment: .top, spacing: 15){
+        VStack(alignment: .leading){
+HStack(alignment: .top, spacing: 15){
             
-            Image("cake")
+            Image("\(menuItem.id)_100w")
             
             //.border(Color("G4"), width:4) //Çerçeve
             .cornerRadius(10) //Köşe yumuşatma
             .shadow(color: Color.black.opacity(0.5),radius:5, x:5, y:5) // Zemin gölgelendirme
             //.clipShape(Circle()) // Capsule, Rectangle vb.
             VStack(alignment: .leading){
-                Text("Kek Dilimi")
+                Text(menuItem.name)
                     .font(.headline)
                     .fontWeight(.bold)
-                RatingsView()
+                RatingsView(count: menuItem.rating)
                 
             }
             
             //Spacer()
         }
+     Text(menuItem.description)
+        }
+        
     }
 }
 
 struct MenuRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuRowView()
+        MenuRowView(menuItem: MenuModel().menu[2])
        
     }
 }

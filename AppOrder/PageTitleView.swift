@@ -29,7 +29,7 @@ struct PageTitleView: View {
             alignment: .leading
         )
         .foregroundColor(Color.white)
-        .background(Color.purple)
+        .background(Color.green)
         
         
     }

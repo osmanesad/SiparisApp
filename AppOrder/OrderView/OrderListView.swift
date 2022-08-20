@@ -11,7 +11,7 @@ struct OrderListView: View {
     var orderModel: OrderModel
     var body: some View {
         VStack{
-            ListHeaderView(text:"Siparişleriniz")
+            ListHeaderView(orderModel: orderModel, text:"Siparişleriniz")
             List(orderModel.orders){item in
                 
                 OrderRowView(orderItem: item)

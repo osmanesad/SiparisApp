@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var orderModel: OrderModel
+    @ObservedObject var orderModel: OrderModel
     @State var isMenuDisplayed: Bool = true
     var body: some View {
         
@@ -23,7 +23,7 @@ struct ContentView: View {
                 .foregroundColor(Color.black)
             }
             
-            MenuListView(orderModel: $orderModel)
+            MenuListView(orderModel: orderModel)
             .layoutPriority(isMenuDisplayed ? 1.0 : 0.5)
             OrderListView(orderModel: orderModel)
             .layoutPriority(isMenuDisplayed ? 0.5 : 1.0)

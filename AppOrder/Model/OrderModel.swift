@@ -9,7 +9,6 @@
 import Foundation
 import Combine
 
-
 ///  A type for size of pizzas with a mutiplier to the price as a raw value.
 enum Size:Double{
     case small = 1.0
@@ -132,7 +131,7 @@ let testOrderItem = OrderItem(id: 1, menuID: 1, name: "Huli Chicken", comments: 
 
 
 ///An class for user preferences in ordering. Will be used with an environment object.
-class UserPreferences{
-    var size:Size = .small
+class UserPreferences:ObservableObject{
+    @Published var size:Size = .medium
 }
 

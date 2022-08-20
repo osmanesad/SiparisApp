@@ -11,7 +11,7 @@ import SwiftUI
 struct AppOrderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(orderModel: OrderModel())
         }
     }
 }

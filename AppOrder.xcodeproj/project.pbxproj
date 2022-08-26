@@ -30,6 +30,7 @@
 		239D965B28A44F730091D1E7 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D965A28A44F730091D1E7 /* ListHeaderView.swift */; };
 		23D9B1D828B94404000EBE16 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9B1D728B94404000EBE16 /* HistoryDetailView.swift */; };
 		23D9B1DA28B95399000EBE16 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9B1D928B95399000EBE16 /* RootTabView.swift */; };
+		23D9B1DC28B95AC3000EBE16 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9B1DB28B95AC3000EBE16 /* ConfirmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		239D965A28A44F730091D1E7 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		23D9B1D728B94404000EBE16 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		23D9B1D928B95399000EBE16 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		23D9B1DB28B95AC3000EBE16 /* ConfirmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				236D043228A1B82F00293FF2 /* HistoryListView.swift */,
 				236D043428A1B84600293FF2 /* HistoryRowView.swift */,
+				23D9B1DB28B95AC3000EBE16 /* ConfirmView.swift */,
 				23D9B1D728B94404000EBE16 /* HistoryDetailView.swift */,
 				236D043628A1B85600293FF2 /* HistoryView.swift */,
 			);
@@ -245,6 +248,7 @@
 				239D965B28A44F730091D1E7 /* ListHeaderView.swift in Sources */,
 				23873B2928B17FE300819EF8 /* SceneDelegate.swift in Sources */,
 				236D043728A1B85600293FF2 /* HistoryView.swift in Sources */,
+				23D9B1DC28B95AC3000EBE16 /* ConfirmView.swift in Sources */,
 				2303F60128B190300000DC6E /* OrderModel.swift in Sources */,
 				236D041B28A1B5EB00293FF2 /* AppOrderApp.swift in Sources */,
 			);

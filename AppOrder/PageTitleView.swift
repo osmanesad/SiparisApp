@@ -22,14 +22,16 @@ struct PageTitleView: View {
             
         }
         .overlay(
-            Image(systemName:isDisplayingOrders ?? false ? "chevron.up.square":"chevron.down.square")
+            Image(systemName: "chevron.up.square")
+                .rotationEffect(isDisplayingOrders ?? false ? Angle(degrees:  0): Angle(degrees: 180.0))
+                .animation(.easeInOut(duration: 0.5))
                 .font(.title)
                 .foregroundColor(isDisplayingOrders != nil ? Color.white: .clear)
                 .padding(),
             alignment: .leading
         )
         .foregroundColor(Color.white)
-        .background(Color.green)
+        .background(Color("G4"))
         
         
     }
@@ -37,6 +39,6 @@ struct PageTitleView: View {
 
 struct PageTitleView_Previews: PreviewProvider {
     static var previews: some View {
-        PageTitleView(title: "Kahve ve Atıştırmalık")
+        PageTitleView(title: "Kahve ve Atıştırmalık", isDisplayingOrders: true)
     }
 }

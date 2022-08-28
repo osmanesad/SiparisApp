@@ -15,18 +15,14 @@ struct OrderListView: View {
             List{
                 Section(
                     
-                    header:  ListHeaderView(orderModel: self.orderModel, text:"Siparişleriniz")
+                    header:ListHeaderView(orderModel: self.orderModel, text:"Siparişleriniz")
                     
                 ){
                     ForEach(orderModel.orders){item in
-                        
-                        
-                        
-                        OrderRowView(orderItem: item)
+                        OrderRowView(orderItem:item)
                     }
                     .onDelete(perform: delete)
                 }
-                
             }
         }
     }
